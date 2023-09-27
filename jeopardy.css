@@ -1,0 +1,109 @@
+/* some colors you may find useful:
+  #115ff4
+  #060ce9
+  #28a200
+  #8d2ab5
+  #74119c
+*/
+
+h1 {
+  font-size: 48px;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  text-shadow: darkgoldenrod 2px 2px;
+  color: #060ce9;
+  margin-left: 2px;
+  position: relative;
+}
+
+#jeopardy {
+  text-align: center;
+  font-size: 9pt;
+  background-color: #060ce9;
+  color: white;
+  border-collapse: collapse;
+  margin-left: 20em;
+  margin-top: -14em;
+  border: solid 1px white;
+}
+
+#jeopardy th {
+  border: solid 1px white;
+  width: 12em;
+  padding: 1em;
+}
+
+th {
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  height: 4em;
+  text-shadow: darkgoldenrod 1px 1px;
+}
+
+td {
+  border: solid 1px white;
+  height: 9em;
+  font-family: Copse, serif;
+}
+
+td:hover {
+  cursor: pointer;
+  border: 2px solid darkgoldenrod;
+}
+
+.question-showing {
+  background-color: #060ce9;
+}
+
+.answer-showing {
+  background-color: gold;
+  color: black;
+}
+
+#restart {
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-shadow: darkgoldenrod 1px 1px;
+  color: white;
+  background-color: #060ce9;
+  width: 8em;
+  height: 3em;
+  margin-left: 2.8em;
+  position: relative;
+}
+
+#restart:hover {
+  cursor: pointer;
+  border: 5px solid black;
+}
+
+.spinner {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner-inner {
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
